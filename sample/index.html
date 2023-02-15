@@ -106,40 +106,23 @@
 		<script src="../build/ckeditor.js"></script>
 		<script>ClassicEditor
 				.create( document.querySelector( '.editor' ), {
-
+					
 					licenseKey: '',
-          style: {
-          definitions: [
-            {
-              name: 'Hidden Item',
-              element: 'span',
-              classes: ['mention-hidden'],
-            },
-          ],
-        },
-					mention: {
-            feeds: [
-                {
-                    marker: '@',
-                    feed: [ '@Barney', '@Lily', '@Marry Ann', '@Marshall', '@Robin', '@Ted' ],
-                    minimumCharacters: 1
-                }
-            ]
-        }
-
-
+					
+					
+					
 				} )
 				.then( editor => {
 					window.editor = editor;
-
-
-
-
+			
+					
+					
+					
 				} )
 				.catch( error => {
 					console.error( 'Oops, something went wrong!' );
 					console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
-					console.warn( 'Build id: xseuzb72sl8r-66st3mmiz7xv' );
+					console.warn( 'Build id: uoz2qfh4cin4-jujsj4qk5w31' );
 					console.error( error );
 				} );
 		</script>

@@ -25,61 +25,55 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
+import Style from '@ckeditor/ckeditor5-style/src/style';
 
 class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
 Editor.builtinPlugins = [
-	Autoformat,
-	BlockQuote,
-	Bold,
-	CloudServices,
-	Essentials,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Indent,
-	Italic,
-	Link,
-	List,
-	MediaEmbed,
-	Mention,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar,
-	TextTransformation
+  Autoformat,
+  BlockQuote,
+  Bold,
+  CloudServices,
+  Essentials,
+  Heading,
+  Image,
+  ImageCaption,
+  ImageStyle,
+  ImageToolbar,
+  ImageUpload,
+  Indent,
+  Italic,
+  Link,
+  List,
+  MediaEmbed,
+  Mention,
+  Paragraph,
+  PasteFromOffice,
+  Table,
+  TableToolbar,
+  TextTransformation,
+  Style,
 ];
 
 // Editor configuration.
 Editor.defaultConfig = {
-	toolbar: {
-		items: [
-			'|',
-			'|',
-			'|'
-		]
-	},
-	language: 'en',
-	image: {
-		toolbar: [
-			'imageTextAlternative',
-			'toggleImageCaption',
-			'imageStyle:inline',
-			'imageStyle:block',
-			'imageStyle:side'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	}
+  toolbar: {
+    items: ['|', '|', '|'],
+  },
+  language: 'en',
+  image: {
+    toolbar: [
+      'imageTextAlternative',
+      'toggleImageCaption',
+      'imageStyle:inline',
+      'imageStyle:block',
+      'imageStyle:side',
+    ],
+  },
+  table: {
+    contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
+  },
 };
 
 export default Editor;
